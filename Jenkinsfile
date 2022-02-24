@@ -1,15 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('Job 1') {
+    stage('Job 3') {
       steps {
-        build(job: 'Job1-Pipeline1', propagate: true)
+        build(job: 'Job3-Pipeline2', propagate: true)
       }
     }
 
     stage('Job 2') {
       steps {
-        build(job: 'Job2-Pipeline1', propagate: true)
+        build(job: 'Job4-Pipeline2', propagate: true)
       }
     }
 
