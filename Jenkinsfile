@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Job 2') {
+      steps {
+        build(job: 'Job2-Pipeline1', propagate: true)
+      }
+    }
+
   }
 }
